@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>El Baghdadi Rim Profile</title>
+		<link href="style.css" rel="stylesheet">
+		<meta name="description" content="My web development class profile">
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Lacquer|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d1656db9d9.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="block-yellow" id="introduction">	
+				<H1> <strong>Hi, I am Rim</strong> </H1>
+					<img src="images/picture.JPG" alt="My Profile Picture" class="img-profile">
+						<p>
+							I'm a first year student in the Global Bachelor of Business Administration program at ESSEC Business School in France.
+						</p>
+						<a href="https://www.essec.edu/en/" class="btn-blue"> ESSEC Business School </a>
+			</div>
+
+			<div class="block-yellow">
+				<h2>Hobbies</h2>
+					<ul>
+						<li><i class="fas fa-book-reader"></i> Reading</li>
+						<li><i class="fas fa-pencil-ruler"></i> Drawing</li>
+						<li><i class="far fa-edit"></i> Graphic design</li>
+						<li><i class="fas fa-globe-africa"></i> Traveling</li>
+						<li><i class="fas fa-paint-brush"></i> Painting</li>
+						<li><i class="fas fa-exchange-alt"></i> Exchanging ideas</li>
+						<li><i class="fas fa-paw"></i> Animals</li>
+						<li><i class="fas fa-dragon"></i> Comics</li>
+						<Li><i class="fas fa-tv"></i> TV-Series</Li>
+						<li><i class="fas fa-film"></i> Movies</li>
+						<li><i class="fas fa-headphones-alt"></i> Music</li>
+					</ul>
+			</div>
+
+			<div class="block-yellow">
+					<h2>Art</h2>
+						<p>
+							Art is really my passion. I love painting, drawing and I doodle all the time. I've tried many different techniques, from simple sketching to watercolor, guache paint and digital art with a graphic tablet. My latest creations are paint on mini canvases and empty beer bottles. 
+						</p>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							    <div class="numbertext">1 / 8</div>
+							    	<img src="images/night-mountain.JPG" style="width:100%">
+							 </div>
+							 <div class="mySlides fade">
+							    <div class="numbertext">2 / 8</div>
+							   		<img src="images/day-mountain.JPG" style="width:100%">
+							  </div> 
+							 <div class="mySlides fade">
+    							<div class="numbertext">3 / 8</div>
+    								<img src="images/clouds.JPG" style="width:100%">
+ 								</div>
+ 							<div class="mySlides fade">
+   								<div class="numbertext">4 / 8</div>
+    								<img src="images/bat-tree.JPG" style="width:100%">
+  							</div>
+		  					<div class="mySlides fade">
+		   						<div class="numbertext">5 / 8</div>
+		    						<img src="images/orange-phonepole.JPG" style="width:100%">
+		  					</div>			
+							<div class="mySlides fade">
+   								<div class="numbertext">6 / 8</div>
+    								<img src="images/bubbles.JPG" style="width:100%">
+  							</div>
+							<div class="mySlides fade">
+   								<div class="numbertext">7 / 8</div>
+    								<img src="images/dragon-eye.JPG" style="width:100%">
+  							</div>
+  							<div class="mySlides fade">
+   								<div class="numbertext">8 / 8</div>
+    								<img src="images/butterflies.JPG" style="width:100%">
+  							</div>
+  							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						  <span class="dot" onclick="currentSlide(3)"></span>
+						  <span class="dot" onclick="currentSlide(4)"></span>
+						  <span class="dot" onclick="currentSlide(5)"></span>
+						  <span class="dot" onclick="currentSlide(6)"></span>
+						  <span class="dot" onclick="currentSlide(7)"></span>
+						  <span class="dot" onclick="currentSlide(8)"></span>
+						</div>
+
+							<script>
+								var slideIndex = 1;
+								showSlides(slideIndex);
+
+								function plusSlides(n) {
+								  showSlides(slideIndex += n);
+								}
+
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								  var i;
+								  var slides = document.getElementsByClassName("mySlides");
+								  var dots = document.getElementsByClassName("dot");
+								  if (n > slides.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+								      slides[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+								      dots[i].className = dots[i].className.replace(" active", "");
+								  }
+								  slides[slideIndex-1].style.display = "block";  
+								  dots[slideIndex-1].className += " active";
+								}
+							</script>
+			</div>
+
+			<div class="block-yellow">
+					<H2>My Association</H2>
+						<p>
+							I am a member of the <em> <a href="https://www.facebook.com/HeForSheESSEC/" target="blank"> HE FOR SHE </em></a>  Assiciation of <strong>ESSEC Business School</strong> since November of 2019. And I am its Secretary General since December of the same year. 
+
+							<em> HE FOR SHE </em>  is a feminist association which fights for gender equality.
+						</p>
+			</div>
+
+			<div class="block-yellow">
+					<h2><i class="fas fa-hashtag"></i> Social Media <i class="fas fa-hashtag"></i></h2>
+						<ul class="list-inline">
+							<li>
+								<a href="https://www.facebook.com/rim.elbaghdadi" target="blank">
+									<i class="fab fa-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/rim.el.b/" target="blank">
+									<i class="fab fa-instagram"></i> Instagram
+								</a>						
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/rim-el-baghdadi/" target="blank">
+									<i class="fab fa-linkedin"></i> LinkedIn
+								</a>
+							</li>
+						</ul>
+			</div>
+
+			<div class="block-yellow">
+					<H2><i class="fas fa-address-card"></i> Contact me </H2>
+						<p>
+							<strong> <i class="fas fa-paper-plane"></i> E-mail adress:</strong> b00773816@essec.edu
+						</p>
+			</div>
+
+		</div>
+	</body>
+</html>
